@@ -1,0 +1,290 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+  }
+  
+  nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    font-size: large;
+  }
+  
+  .menu li a:hover {
+    color: #ccc;
+    border-bottom: white solid 2px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .logo {
+      font-size: 20px;
+    }
+  
+    .menu {
+      display: none;
+      flex-direction: column;
+      padding-top: 10px;
+      border-top: white solid 2px;
+    }
+  
+    .menu li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .menu li:last-child {
+      margin-bottom: 0;
+    }
+  
+    .menu li a {
+      color: #fff;
+    }
+  
+    .menu-toggle {
+      display: block;
+      color: #fff;
+      font-size: 20px;
+      text-decoration: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+  .menu-toggle {
+    display: none;
+    position: relative; /* Add position relative to the menu toggle */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu {
+      display: none;
+      position: absolute;
+      top: 14%;
+      left: 0;
+      background-color: #333;
+      padding: 10px 0;
+      margin-top: 10px; /* Add margin-top to create space between the menu toggle and the dropdown */
+      width: 100%; /* Set the width of the dropdown to match the menu toggle */
+    }
+  
+    .menu.active {
+      display: block;
+    }
+  
+    .menu li {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    .menu li:last-child {
+      margin-bottom: 0;
+    }
+  
+    .menu li a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+      transition: background-color 0.3s ease;
+    }
+  
+    .menu li a:hover {
+      background-color: #ffffff;
+      color: black;
+    }
+  
+    .menu-toggle {
+      display: block;
+      color: #fff;
+      font-size: 40px;
+      text-decoration: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+  .menu a.active {
+    border-bottom: white solid 2px;
+  }
+  @media screen and (max-width: 768px) {
+    .menu a.active {
+      color: #000000; /* Black color for active link on mobile */
+      background-color: #ffffff; /* White background for active link on mobile */
+    }
+  }
+
+  .image-text-container-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-bottom: black solid 2px;
+  }
+  
+  .image-container-home {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .image-container-home img {
+    width: 75%;
+    height: auto;
+  }
+  
+  .text-container-home {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .text-container-home h2 {
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .image-text-container-home {
+      flex-direction: column;
+    }
+  
+    .image-container-home {
+      margin-right: 0px;
+      margin-left: 100px;
+      margin-bottom: 20px;
+    }
+  }
+  .text-container-home a{
+    align-self: center;
+    position: center;
+    margin:auto;
+  }
+  .home-buttons {
+    color: #ffffff; /* Replace with the desired color for the link */
+    text-decoration: none;
+    background-color: black;
+    padding: 10px 20px;
+    border: 1px solid #000000; /* Border to match the link color */
+    border-radius: 4px;
+  }
+  
+  .home-buttons:hover {
+    color: #000000; /* Hover background color */
+    background-color: #fff; /* Hover text color */
+    border: black solid 3px;
+  }
+  @media screen and (max-width: 768px) {
+    .text-container-home{
+        margin-bottom: 10px;
+    }
+      
+  }
+  .form-contact{
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  form{
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    border: black solid 2px;
+
+  }
+  form h3{
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  form input, form textarea{
+    border: 0;
+    margin: 10px 0px;
+    padding: 20px;
+    outline: none;
+    background-color: #f5f5f5;
+    font-size: 16px;
+
+  }
+  form button{
+    padding: 15px;
+    background-color: lightcoral;
+    color: whitesmoke;
+    font-size: 18px;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0px;
+    border-radius: 30px;
+  }
+  form button:hover{
+    background-color: red;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+  }
+  .image {
+    flex: 1;
+  }
+  
+  .text {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      margin-left: 15px;
+    }
+  
+    .image {
+      flex: none;
+      margin-bottom: 20px;
+    }
+  
+    .text {
+      flex: none;
+      padding: 0;
+    }
+  }

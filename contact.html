@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Stefan Dimitrov">
+    <meta name="keywords" content="Creative design services, Logo design, Banner design, Website development, Copywriting, Brand identity, Professional design solutions, Business marketing, Branding agency, Business branding">
+    <meta name="description" content="We offer creative design services including logo design, banner design, website development, and copywriting for businesses. Improve your brand identity with our professional design solutions.
+    Our design agency provides top-quality branding and design services including logo design, website development, and copywriting. Get noticed and attract more customers with our creative solutions.
+    Looking for professional design services for your business? We offer logo design, banner design, website development, and copywriting services to help you stand out and succeed in the market.">
+    <link href="style1.css" rel="stylesheet">
+    <title>SimDim Marketing</title>
+</head>
+<body>
+    <nav>
+        <p class="logo">SimDim Marketing</p>
+        <ul class="menu">
+            <li><a href="index.html">Начало</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="portfolio.html">Портфолио</a></li>
+            <li><a href="about.html">За нас</a></li>
+            <li><a href="contact.html" class="active">Контакти</a></li>
+        </ul>
+        <a href="#" class="menu-toggle">
+            <div class="icon">&#9776;</div>
+        </a>
+    </nav>
+    <div class="form-contact">
+        <form onsubmit="sendEmail(); reset(); return false">
+            <h3>Пишете ни</h3>
+          <input type="text" name="name" id="name" placeholder="Име" required>
+          <input type="email" id="email" name="email" placeholder="Имейл" required>
+          <textarea name="message" id="messageBox" placeholder="Съобщение" required></textarea>
+          <button type="submit">Изпрати</button>
+        </form>
+      </div> 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+                function sendEmail() {
+                    Email.send({
+                        Host: "smtp.elasticemail.com",
+                        Username: "animainly@gmail.com",
+                        Password: "B74A0C4DCA8707A7905C497B186C1AD3992D",
+                        To: 'simdimfashion@gmail.com',
+                        From: document.getElementById('email').value,
+                        Subject: "New message",
+                        Body: "Name: " + document.getElementById('name').value
+                        + "<br> Email: " + document.getElementById('email').value
+                        +"<br> Message: " + document.getElementById('messageBox').value
+                    }).then(
+                        message => alert('Успешно изпратено съобщение!')
+                    );
+            }
+    </script>
+      
+    <script src="menuScript.js"></script>
+
+</body>
+</html>
