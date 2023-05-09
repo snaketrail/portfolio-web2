@@ -22,3 +22,8 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+
+  function goToHome(){
+    window.location.href = "index.html";
+  }
