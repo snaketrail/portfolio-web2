@@ -447,7 +447,7 @@ main {
   align-items: center; 
   justify-content: center; 
   font-size: 50px;
-  min-height: 50vh; 
+  min-height: 30vh; 
 }
 
 section {
@@ -608,4 +608,39 @@ section {
     width: 100%;
     max-width: none;
   }
+}
+
+
+.image-gallery-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.image-gallery-logo img {
+  width: 300px; /* Adjust the size as needed */
+  height: 300px;
+  object-fit: cover;
+}
+
+.image-gallery-ebook {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.image-gallery-ebook img {
+  width: 300px; /* Adjust the size as needed */
+  height: 500px;
+  object-fit: cover;
+  border: solid black 1px;
+}
+
+h3{
+  text-align: center;
+  font-size: 24px;
 }
