@@ -86,7 +86,7 @@ body {
   }
   .menu-toggle {
     display: none;
-    position: relative; /* Add position relative to the menu toggle */
+    position: relative; 
   }
   
   @media screen and (max-width: 768px) {
@@ -97,8 +97,8 @@ body {
       left: 0;
       background-color: #333;
       padding: 10px 0;
-      margin-top: 10px; /* Add margin-top to create space between the menu toggle and the dropdown */
-      width: 100%; /* Set the width of the dropdown to match the menu toggle */
+      margin-top: 10px; 
+      width: 100%; 
     }
   
     .menu.active {
@@ -141,8 +141,8 @@ body {
   }
   @media screen and (max-width: 768px) {
     .menu a.active {
-      color: #000000; /* Black color for active link on mobile */
-      background-color: #ffffff; /* White background for active link on mobile */
+      color: #000000; 
+      background-color: #ffffff; 
     }
   }
 
@@ -196,17 +196,17 @@ body {
     margin:auto;
   }
   .home-buttons {
-    color: #ffffff; /* Replace with the desired color for the link */
+    color: #ffffff; 
     text-decoration: none;
     background-color: black;
     padding: 10px 20px;
-    border: 1px solid #000000; /* Border to match the link color */
+    border: 1px solid #000000; 
     border-radius: 4px;
   }
   
   .home-buttons:hover {
-    color: #000000; /* Hover background color */
-    background-color: #fff; /* Hover text color */
+    color: #000000; 
+    background-color: #fff; 
     border: black solid 3px;
   }
   @media screen and (max-width: 768px) {
@@ -327,7 +327,7 @@ body {
   
   @media (min-width: 768px) {
     .service {
-      margin: 10px 25px; /* Adjust the margin as needed */
+      margin: 10px 25px; 
     }
   }
 
@@ -341,7 +341,7 @@ body {
     color: #666;
     margin-bottom: 20px;
     width: 100%;
-    max-width: 800px; /* Adjust the max-width as needed */
+    max-width: 800px; 
     margin: 0 auto;
   }
   
@@ -364,7 +364,6 @@ body {
   .service-image {
     width: 80%;
     height: 400px;
-    /* object-fit: cover; */
     margin-bottom: 20px;
   }
   
@@ -378,19 +377,19 @@ body {
 .service-image-1{
   width: 50%;
   height: 350px;
-  /* object-fit: cover; */
+
   margin-bottom: 20px;
 }
 .service-image-2{
   width: 50%;
   height: 350px;
-  /* object-fit: cover; */
+
   margin-bottom: 20px;
 }
 .service-image-3{
   width: 30%;
   height: 300px;
-  /* object-fit: cover; */
+
   margin-bottom: 20px;
 }
 
@@ -398,19 +397,19 @@ body {
   .service-image-1{
     width: 70%;
     height: 350px;
-    /* object-fit: cover; */
+ 
     margin-bottom: 20px;
   }
   .service-image-2{
     width: 70%;
     height: 350px;
-    /* object-fit: cover; */
+
     margin-bottom: 20px;
   }
   .service-image-3{
     width: 70%;
     height: 350px;
-    /* object-fit: cover; */
+
     margin-bottom: 20px;
   }
 }
@@ -489,8 +488,8 @@ section {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
-  text-align: center; /* Center text */
+  align-items: center; 
+  text-align: center; 
 }
 
 .article img {
@@ -518,10 +517,10 @@ section {
   text-decoration: none;
   border-radius: 5px;
   font-size: 12px;
-  margin-top: auto; /* Pushes the button to the bottom */
+  margin-top: auto; 
 }
 
-/* Responsive Styles */
+
 @media screen and (min-width: 768px) {
   .article {
     width: calc(50% - 20px);
@@ -573,14 +572,14 @@ section {
   font-size: 20px;
   font-weight: bold;
   color: #333;
-  text-align: center; /* Add this line */
+  text-align: center; 
 }
 
 .portfolio-description {
   margin-bottom: 20px;
   font-size: 16px;
   color: #666;
-  text-align: center; /* Add this line */
+  text-align: center; 
 }
 
 .portfolio-button {
@@ -593,8 +592,8 @@ section {
   text-decoration: none;
   border-radius: 4px;
   transition: background-color 0.3s ease;
-  width: fit-content; /* Adjust the width as needed */
-  margin: 0 auto; /* Center the button horizontally */
+  width: fit-content; 
+  margin: 0 auto; 
   margin-bottom: 10px;
 }
 
@@ -619,7 +618,7 @@ section {
 }
 
 .image-gallery-logo img {
-  width: 300px; /* Adjust the size as needed */
+  width: 300px; 
   height: 300px;
   object-fit: cover;
 }
@@ -633,7 +632,7 @@ section {
 }
 
 .image-gallery-ebook img {
-  width: 300px; /* Adjust the size as needed */
+  width: 300px; 
   height: 500px;
   object-fit: cover;
   border: solid black 1px;
@@ -739,18 +738,18 @@ h3{
   border-radius: 5px;
   z-index: 9999;
   width: 90%;
-  max-width: 600px; /* Set a maximum width to prevent it from becoming too wide */
+  max-width: 600px; 
 
 }
 
 #modal-content {
-  /* Styles for the modal content */
+
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
   color: #333;
-  max-height: 500px; /* Set a maximum height for the content */
-  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 500px; 
+  overflow-y: auto; 
   padding: 20px;
   margin: 10px auto;
 }
@@ -795,18 +794,18 @@ h3{
   border-radius: 5px;
   z-index: 9999;
   width: 90%;
-  max-width: 600px; /* Set a maximum width to prevent it from becoming too wide */
+  max-width: 600px; 
 
 }
 
 #modal1-content {
-  /* Styles for the modal content */
+
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
   color: #333;
-  max-height: 500px; /* Set a maximum height for the content */
-  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 500px; 
+  overflow-y: auto; 
   padding: 20px;
   margin: 10px auto;
 }
