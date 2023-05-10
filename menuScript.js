@@ -27,3 +27,53 @@ window.addEventListener('DOMContentLoaded', () => {
   function goToHome(){
     window.location.href = "index.html";
   }
+
+
+const privacyPolicyLink = document.getElementById('privacy-policy-link');
+
+
+
+// Get the modal elements
+const modalOverlay = document.getElementById('modal-overlay');
+const modal = document.getElementById('modal');
+
+// Function to open the modal
+function openModal() {
+  modalOverlay.style.display = 'block';
+  modal.style.display = 'block';
+}
+
+// Function to close the modal
+function closeModal() {
+  modalOverlay.style.display = 'none';
+  modal.style.display = 'none';
+}
+
+// Add event listener to open the modal when privacy policy link is clicked
+privacyPolicyLink.addEventListener('click', openModal);
+
+// Add event listener to close the modal when overlay is clicked
+modalOverlay.addEventListener('click', closeModal);
+
+
+const tosPolicyLink = document.getElementById('tos-policy-link');
+const modal1Overlay = document.getElementById('modal1-overlay');
+const modal1 = document.getElementById('modal1');
+
+// Function to open the modal
+function openModal1() {
+  modal1Overlay.style.display = 'block';
+  modal1.style.display = 'block';
+}
+
+// Function to close the modal
+function closeModal1() {
+  modal1Overlay.style.display = 'none';
+  modal1.style.display = 'none';
+}
+
+// Add event listener to open the modal when privacy policy link is clicked
+tosPolicyLink.addEventListener('click', openModal1);
+
+// Add event listener to close the modal when overlay is clicked
+modal1Overlay.addEventListener('click', closeModal1);

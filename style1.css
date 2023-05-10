@@ -717,3 +717,115 @@ h3{
   border: black solid 1px;
   cursor: pointer;
 }
+
+#modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 9999;
+  width: 90%;
+  max-width: 600px; /* Set a maximum width to prevent it from becoming too wide */
+
+}
+
+#modal-content {
+  /* Styles for the modal content */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  max-height: 500px; /* Set a maximum height for the content */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 20px;
+  margin: 10px auto;
+}
+
+#modal-content h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#modal-content p {
+  margin-bottom: 10px;
+}
+
+#modal-content a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+#modal-content a:hover {
+  text-decoration: underline;
+}
+
+#modal1-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal1 {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 9999;
+  width: 90%;
+  max-width: 600px; /* Set a maximum width to prevent it from becoming too wide */
+
+}
+
+#modal1-content {
+  /* Styles for the modal content */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  max-height: 500px; /* Set a maximum height for the content */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 20px;
+  margin: 10px auto;
+}
+
+#modal1-content h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#modal1-content p {
+  margin-bottom: 10px;
+}
+
+#modal1-content a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+#modal1-content a:hover {
+  text-decoration: underline;
+}
