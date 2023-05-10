@@ -483,7 +483,7 @@ section {
 
 .article {
   width: 100%;
-  max-width: calc(25% - 20px);
+  max-width: calc(50% - 20px);
   margin-bottom: 20px;
   padding: 10px;
   background-color: #ffffff;
@@ -529,19 +529,14 @@ section {
   }
 }
 
-@media screen and (min-width: 468px) {
-  .article {
-    width: calc(50% - 20px);
-    max-width: calc(100% - 50px);
-  }
-}
-
 @media screen and (min-width: 992px) {
   .article {
     width: calc(25% - 20px);
     max-width: calc(25% - 20px);
   }
 }
+
+
 #web-design {
   padding: 50px 0;
 }
