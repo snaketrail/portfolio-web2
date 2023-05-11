@@ -1,14 +1,22 @@
 window.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.menu');
-    const icon = document.querySelector('.menu-toggle .icon');
-    const iconText = icon.textContent;
-  
-    menuToggle.addEventListener('click', () => {
-      menu.classList.toggle('active');
-      icon.textContent = menu.classList.contains('active') ? '✕' : iconText;
-    });
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+  const icon = document.querySelector('.menu-toggle .icon');
+  const iconText = icon.textContent;
+  const serviceItem = document.querySelector('.service-item');
+
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    icon.textContent = menu.classList.contains('active') ? '✕' : iconText;
+    
+    // Toggle the z-index of service-item
+    if (menu.classList.contains('active')) {
+      serviceItem.style.zIndex = '-1';
+    } else {
+      serviceItem.style.zIndex = ''; // Reset to default value
+    }
   });
+});
 
   window.addEventListener('DOMContentLoaded', () => {
     const menuLinks = document.querySelectorAll('.menu a');
