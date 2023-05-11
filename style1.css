@@ -581,6 +581,11 @@ section {
   color: #666;
   text-align: center; 
 }
+.portfolio-description-ul{
+  font-size: 16px;
+  color: #666;
+  margin: 10px;
+}
 
 .portfolio-button {
   display: flex;
