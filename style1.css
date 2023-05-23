@@ -628,6 +628,20 @@ section {
   object-fit: cover;
 }
 
+.image-gallery-logo-market {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.image-gallery-logo-market img {
+  width: 400px; 
+  height: 700px;
+  object-fit: cover;
+}
+
 .image-gallery-ebook {
   display: flex;
   flex-wrap: wrap;
