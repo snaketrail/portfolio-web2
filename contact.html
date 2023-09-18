@@ -26,12 +26,9 @@
         </a>
     </nav>
     <div class="form-contact">
-        <form onsubmit="sendEmail(); reset(); return false">
-            <h3>Пишете ни и ще отговорим на въпросите Ви!</h3>
-          <input type="text" name="name" id="name" placeholder="Име" required>
-          <input type="email" id="email" name="email" placeholder="Имейл" required>
-          <textarea name="message" id="messageBox" placeholder="Съобщение" required></textarea>
-          <button type="submit">Изпрати</button>
+        <form>
+            <h3>За запитвания</h3>
+              <p class="contact-forms">Имейл: simdim.marketing@gmail.com  / Телефон: 0886327023</p>
         </form>
       </div> 
 
@@ -164,24 +161,6 @@ b. Вашата продължителна употреба на сайта по
         </div>
       </footer>
       
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-                function sendEmail() {
-                    Email.send({
-                        Host: "smtp.elasticemail.com",
-                        Username: "animainly@gmail.com",
-                        Password: "B74A0C4DCA8707A7905C497B186C1AD3992D",
-                        To: 'simdimfashion@gmail.com',
-                        From: document.getElementById('email').value,
-                        Subject: "New message",
-                        Body: "Name: " + document.getElementById('name').value
-                        + "<br> Email: " + document.getElementById('email').value
-                        +"<br> Message: " + document.getElementById('messageBox').value
-                    }).then(
-                        message => alert('Успешно изпратено съобщение!')
-                    );
-            }
-    </script>
       
     <script src="menuScript.js"></script>
 
