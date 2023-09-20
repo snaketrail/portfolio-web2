@@ -888,3 +888,102 @@ h3{
 .contact-forms{
   margin-left: 25px;
 }
+/* Style for the image container */
+.image-container12 {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed */
+  align-items: center; /* Align vertically centered */
+  padding: 20px; /* Add padding as needed */
+}
+
+/* Style for each image box */
+.image-box {
+  text-align: center; /* Center text and images */
+  flex: 1; /* Distribute available space equally among boxes */
+  margin: 0 10px; /* Add margin between boxes */
+}
+
+/* Style for images */
+.image-box img {
+  width: 100%; /* Make images responsive */
+  max-width: 100%; /* Prevent images from exceeding their original size */
+}
+
+/* Style for titles */
+.image-box h2 {
+  font-size: 18px; /* Adjust as needed */
+  margin-top: 10px; /* Add spacing between title and image */
+}
+
+/* Style for text */
+.image-box p {
+  font-size: 14px; /* Adjust as needed */
+}
+
+/* Media query for screens with a maximum width of 768px (typical phone screens) */
+@media (max-width: 768px) {
+  /* Style for the image container */
+.image-container12 {
+  display: flex;
+  flex-direction: column; /* Display images in a column */
+  padding: 20px; /* Add padding as needed */
+}
+
+/* Style for each image box */
+.image-box {
+  text-align: center; /* Center text and images */
+  margin-bottom: 20px; /* Add spacing between image boxes */
+}
+.image-wrapper {
+  height: 200px; /* Set a fixed height for the image container */
+  overflow: hidden; /* Hide overflow to maintain aspect ratio */
+}
+
+/* Style for images within the image wrapper */
+.image-wrapper img {
+  width: 100%; /* Make images responsive */
+  height: 100%; /* Maintain aspect ratio */
+  object-fit: cover; /* Resize image to cover the entire container */
+}
+
+/* Style for images */
+.image-box img {
+  width: 100%; /* Make images responsive */
+  max-width: 100%; /* Prevent images from exceeding their original size */
+}
+
+/* Style for titles */
+.image-box h2 {
+  font-size: 18px; /* Adjust as needed */
+  margin-top: 10px; /* Add spacing between title and image */
+}
+
+/* Style for text */
+.image-box p {
+  font-size: 14px; /* Adjust as needed */
+}
+  .image-box {
+      margin-bottom: 10px; /* Reduce spacing between image boxes */
+  }
+}
+/* Style for marketing buttons */
+a.marketing-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  border: black solid 1px;
+}
+
+/* Hover effect */
+a.marketing-button:hover {
+  background-color: black;
+  color: #fff;
+}
+.image-box a.service-button{
+  margin-top: 10px;
+}
